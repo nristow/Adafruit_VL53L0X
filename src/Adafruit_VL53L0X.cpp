@@ -57,7 +57,7 @@ boolean Adafruit_VL53L0X::begin(uint8_t i2c_addr, boolean debug ) {
          Serial.print( F( ", Minor: " ) ); Serial.println( DeviceInfo.ProductRevisionMinor );
       }
 
-      if( ( DeviceInfo.ProductRevisionMinor != 1 ) && ( DeviceInfo.ProductRevisionMinor != 1 ) ) {
+      if( ( DeviceInfo.ProductRevisionMinor != 1 ) && ( DeviceInfo.ProductRevisionMinor != 15 ) ) {
           if( debug ) {
               Serial.print( F( "Error expected cut 1.1 but found " ) );
               Serial.print( DeviceInfo.ProductRevisionMajor );
